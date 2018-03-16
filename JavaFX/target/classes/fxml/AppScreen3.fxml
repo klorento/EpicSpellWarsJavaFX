@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.TilePane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerAppScreen3">
+   <children>
+      <TilePane prefHeight="800.0" prefWidth="1280.0">
+         <children>
+            <ImageView fitHeight="800.0" fitWidth="1280.0">
+               <image>
+                  <Image url="@../Downloads/EpicSpellWarsJavaFX-master/EpicSpellWarsJavaFX-master/JavaFX/src/stronaRozgrywki.jpg" />
+               </image></ImageView>
+         </children>
+      </TilePane>
+      <TilePane layoutY="147.0" prefHeight="651.0" prefWidth="938.0">
+         <opaqueInsets>
+            <Insets top="80.0" />
+         </opaqueInsets>
+         <children>
+            <TilePane prefColumns="4" prefHeight="296.0" prefRows="2" prefWidth="209.0">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <TilePane.margin>
+                  <Insets left="22.0" top="8.0" />
+               </TilePane.margin>
+               <children>
+                  <ImageView fitHeight="296.0" fitWidth="209.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@epic/Nowyfolder/kartyrobocze/wszystkie%20karty/treasure/t1.jpg" />
+                     </image>
+                     <TilePane.margin>
+                        <Insets />
+                     </TilePane.margin>
+                  </ImageView>
+               </children>
+            </TilePane>
+            <TilePane layoutX="32.0" layoutY="18.0" prefColumns="4" prefHeight="296.0" prefRows="2" prefWidth="209.0">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <children>
+                  <ImageView fitHeight="296.0" fitWidth="209.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@epic/Nowyfolder/kartyrobocze/wszystkie%20karty/treasure/t1.jpg" />
+                     </image>
+                     <TilePane.margin>
+                        <Insets />
+                     </TilePane.margin>
+                  </ImageView>
+               </children>
+               <TilePane.margin>
+                  <Insets left="22.0" top="8.0" />
+               </TilePane.margin>
+            </TilePane>
+            <TilePane layoutX="263.0" layoutY="18.0" prefColumns="4" prefHeight="296.0" prefRows="2" prefWidth="209.0">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <children>
+                  <ImageView fitHeight="296.0" fitWidth="209.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@epic/Nowyfolder/kartyrobocze/wszystkie%20karty/treasure/t1.jpg" />
+                     </image>
+                     <TilePane.margin>
+                        <Insets />
+                     </TilePane.margin>
+                  </ImageView>
+               </children>
+               <TilePane.margin>
+                  <Insets left="22.0" top="8.0" />
+               </TilePane.margin>
+            </TilePane>
+            <TilePane layoutX="494.0" layoutY="18.0" prefColumns="4" prefHeight="296.0" prefRows="2" prefWidth="209.0">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <children>
+                  <ImageView fitHeight="296.0" fitWidth="209.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@epic/Nowyfolder/kartyrobocze/wszystkie%20karty/treasure/t1.jpg" />
+                     </image>
+                     <TilePane.margin>
+                        <Insets />
+                     </TilePane.margin>
+                  </ImageView>
+               </children>
+               <TilePane.margin>
+                  <Insets left="22.0" top="8.0" />
+               </TilePane.margin>
+            </TilePane>
+            <TilePane layoutX="725.0" layoutY="18.0" prefColumns="4" prefHeight="296.0" prefRows="2" prefWidth="209.0">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <children>
+                  <ImageView fitHeight="296.0" fitWidth="209.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@epic/Nowyfolder/kartyrobocze/wszystkie%20karty/treasure/t1.jpg" />
+                     </image>
+                     <TilePane.margin>
+                        <Insets />
+                     </TilePane.margin>
+                  </ImageView>
+               </children>
+               <TilePane.margin>
+                  <Insets left="22.0" top="14.0" />
+               </TilePane.margin>
+            </TilePane>
+            <TilePane layoutX="32.0" layoutY="334.0" prefColumns="4" prefHeight="296.0" prefRows="2" prefWidth="209.0">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <children>
+                  <ImageView fitHeight="296.0" fitWidth="209.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@epic/Nowyfolder/kartyrobocze/wszystkie%20karty/treasure/t1.jpg" />
+                     </image>
+                     <TilePane.margin>
+                        <Insets />
+                     </TilePane.margin>
+                  </ImageView>
+               </children>
+               <TilePane.margin>
+                  <Insets left="22.0" top="14.0" />
+               </TilePane.margin>
+            </TilePane>
+            <TilePane layoutX="263.0" layoutY="334.0" prefColumns="4" prefHeight="296.0" prefRows="2" prefWidth="209.0">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <children>
+                  <ImageView fitHeight="296.0" fitWidth="209.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@epic/Nowyfolder/kartyrobocze/wszystkie%20karty/treasure/t1.jpg" />
+                     </image>
+                     <TilePane.margin>
+                        <Insets />
+                     </TilePane.margin>
+                  </ImageView>
+               </children>
+               <TilePane.margin>
+                  <Insets left="22.0" top="14.0" />
+               </TilePane.margin>
+            </TilePane>
+            <TilePane layoutX="494.0" layoutY="334.0" prefColumns="4" prefHeight="296.0" prefRows="2" prefWidth="209.0">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <children>
+                  <ImageView fitHeight="296.0" fitWidth="209.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@epic/Nowyfolder/kartyrobocze/wszystkie%20karty/treasure/t1.jpg" />
+                     </image>
+                     <TilePane.margin>
+                        <Insets />
+                     </TilePane.margin>
+                  </ImageView>
+               </children>
+               <TilePane.margin>
+                  <Insets left="22.0" top="14.0" />
+               </TilePane.margin>
+            </TilePane>
+         </children>
+      </TilePane>
+      <Button layoutX="505.0" layoutY="533.0" mnemonicParsing="false" onAction="#setImageWizardOne" text="Throw a dice!" />
+      <Button layoutX="324.0" layoutY="599.0" mnemonicParsing="false" onAction="#backMenu" text="Back to menu" />
+      <Button layoutX="75.0" layoutY="528.0" mnemonicParsing="false" onAction="#endPage" prefHeight="41.0" prefWidth="375.0" text="Przycisk do sprawdzania przejścia do strony końcowej" />
+      <TilePane prefColumns="4" prefHeight="146.0" prefRows="1" prefWidth="947.0">
+         <children>
+            <TilePane fx:id="www" prefHeight="122.0" prefWidth="210.0">
+               <children>
+                  <ImageView fx:id="aaa" fitHeight="122.0" fitWidth="210.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@epic/wizardsmale/playermaly6.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+               <TilePane.margin>
+                  <Insets left="23.0" top="15.0" />
+               </TilePane.margin>
+            </TilePane>
+            <TilePane layoutX="33.0" layoutY="25.0" prefHeight="122.0" prefWidth="210.0">
+               <children>
+                  <ImageView fitHeight="122.0" fitWidth="210.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@epic/wizardsmale/playermaly6.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+               <TilePane.margin>
+                  <Insets left="21.0" top="15.0" />
+               </TilePane.margin>
+            </TilePane>
+            <TilePane layoutX="264.0" layoutY="25.0" prefHeight="122.0" prefWidth="210.0">
+               <children>
+                  <ImageView fitHeight="122.0" fitWidth="210.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@epic/wizardsmale/playermaly6.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+               <TilePane.margin>
+                  <Insets left="19.0" top="15.0" />
+               </TilePane.margin>
+            </TilePane>
+            <TilePane layoutX="495.0" layoutY="25.0" prefHeight="122.0" prefWidth="210.0">
+               <children>
+                  <ImageView fitHeight="122.0" fitWidth="210.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@epic/wizardsmale/playermaly6.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+               <TilePane.margin>
+                  <Insets left="17.0" top="15.0" />
+               </TilePane.margin>
+            </TilePane>
+         </children>
+      </TilePane>
+      <TilePane layoutX="966.0" layoutY="151.0" prefColumns="1" prefHeight="400.0" prefRows="1" prefWidth="283.0">
+         <children>
+            <ImageView fitHeight="400.0" fitWidth="286.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@epic/wizardsDuze/e1.jpg" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </ImageView>
+         </children>
+         <opaqueInsets>
+            <Insets right="20.0" top="30.0" />
+         </opaqueInsets>
+      </TilePane>
+   </children>
+</Pane>

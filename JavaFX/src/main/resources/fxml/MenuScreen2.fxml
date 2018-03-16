@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SplitMenuButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerMenuScreen2">
+
+   <children>
+
+      <TilePane orientation="VERTICAL" prefHeight="800.0" prefWidth="1280.0">
+
+         <children>
+
+            <ImageView fitHeight="800.0" fitWidth="1280.0">
+
+               <image>
+
+                  <Image url="/images/backgrounds/stronawyboru.jpg" />
+
+               </image>
+
+            </ImageView>
+
+         </children>
+
+      </TilePane>
+
+      <Button layoutX="304.0" layoutY="622.0" mnemonicParsing="false" onAction="#openApplication" text="START GAME">
+
+         <font>
+
+            <Font size="18.0" />
+
+         </font>
+
+      </Button>
+
+      <Button layoutX="500.0" layoutY="622.0" mnemonicParsing="false" onAction="#exitApplication" text="QUIT">
+
+         <font>
+
+            <Font size="18.0" />
+
+         </font></Button>
+
+      <TextField fx:id="nick" layoutX="550.0" layoutY="60.0" />
+
+      <Label fx:id="welcomePlayer" layoutX="500.0" layoutY="146.0" prefHeight="27.0" prefWidth="177.0" textFill="WHITE">
+
+         <font>
+
+            <Font name="System Bold" size="18.0" />
+
+         </font></Label>
+
+      <Label layoutX="280.0" layoutY="53.0" text="Enter your Nickname:" textFill="WHITE">
+
+         <font>
+
+            <Font name="Arial Bold" size="24.0" />
+
+         </font></Label>
+
+      <Label layoutX="280.0" layoutY="330.0" text="CHOSE YOUR WIZARD" textFill="WHITE">
+
+         <font>
+
+            <Font name="Arial Bold" size="24.0" />
+
+         </font>
+
+      </Label>
+
+      <Label fx:id="welcome" layoutX="250.0" layoutY="146.0" prefHeight="26.0" prefWidth="323.0" textFill="#fcfcfc">
+
+         <font>
+
+            <Font name="System Bold" size="18.0" />
+
+         </font></Label>
+
+      <Button fx:id="confirmNickname" layoutX="550.0" layoutY="90.0" mnemonicParsing="false" onAction="#writeNickname" text="Confirm nickname" />
+
+      <SplitMenuButton layoutX="280.0" layoutY="220.0" mnemonicParsing="false" text=" CHOOSE NUMER OF OPPONENTS">
+
+         <items>
+
+            <MenuItem mnemonicParsing="false" text="ONE OPPONENT" />
+
+            <MenuItem mnemonicParsing="false" text="TWO OPPONENTS" />
+
+            <MenuItem mnemonicParsing="false" text="THREE OPPONENTS" />
+
+         </items>
+
+      </SplitMenuButton>
+
+      <TilePane layoutY="385.0" prefColumns="8" prefHeight="188.0" prefRows="1" prefWidth="1280.0">
+
+         <opaqueInsets>
+
+            <Insets left="50.0" top="330.0" />
+
+         </opaqueInsets>
+
+         <children>
+
+            <Button fx:id="button1" mnemonicParsing="false" onAction="#setWizardOne" prefHeight="180.0" prefWidth="129.0">
+
+               <graphic>
+
+                  <ImageView fitHeight="180.0" fitWidth="129.0" pickOnBounds="true" preserveRatio="true">
+
+                     <image>
+
+                        <Image url="/images/wizards/wizardsDuze/e1.jpg" />
+
+                     </image>
+
+                  </ImageView>
+
+               </graphic>
+
+            </Button>
+
+            <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="180.0" prefWidth="129.0">
+
+               <graphic>
+
+                  <ImageView fitHeight="180.0" fitWidth="129.0" pickOnBounds="true" preserveRatio="true">
+
+                     <image>
+
+                        <Image url="/images/wizards/wizardsDuze/e2.jpg" />
+
+                     </image>
+
+                  </ImageView>
+
+               </graphic>
+
+            </Button>
+
+            <Button layoutX="155.0" layoutY="10.0" mnemonicParsing="false" prefHeight="180.0" prefWidth="129.0">
+
+               <graphic>
+
+                  <ImageView fitHeight="180.0" fitWidth="129.0" pickOnBounds="true" preserveRatio="true">
+
+                     <image>
+
+                        <Image url="/images/wizards/wizardsDuze/e3.jpg" />
+
+                     </image>
+
+                  </ImageView>
+
+               </graphic>
+
+            </Button>
+
+            <Button layoutX="300.0" layoutY="10.0" mnemonicParsing="false" prefHeight="180.0" prefWidth="129.0">
+
+               <graphic>
+
+                  <ImageView fitHeight="180.0" fitWidth="129.0" pickOnBounds="true" preserveRatio="true">
+
+                     <image>
+
+                        <Image url="/images/wizards/wizardsDuze/e4.jpg" />
+
+                     </image>
+
+                  </ImageView>
+
+               </graphic>
+
+            </Button>
+
+            <Button layoutX="445.0" layoutY="10.0" mnemonicParsing="false" prefHeight="180.0" prefWidth="129.0">
+
+               <graphic>
+
+                  <ImageView fitHeight="180.0" fitWidth="129.0" pickOnBounds="true" preserveRatio="true">
+
+                     <image>
+
+                        <Image url="/images/wizards/wizardsDuze/e5.jpg" />
+
+                     </image>
+
+                  </ImageView>
+
+               </graphic>
+
+            </Button>
+
+            <Button layoutX="590.0" layoutY="10.0" mnemonicParsing="false" prefHeight="180.0" prefWidth="129.0">
+
+               <graphic>
+
+                  <ImageView fitHeight="180.0" fitWidth="129.0" pickOnBounds="true" preserveRatio="true">
+
+                     <image>
+
+                        <Image url="/images/wizards/wizardsDuze/e6.jpg" />
+
+                     </image>
+
+                  </ImageView>
+
+               </graphic>
+
+            </Button>
+
+            <Button layoutX="735.0" layoutY="10.0" mnemonicParsing="false" prefHeight="180.0" prefWidth="129.0">
+
+               <graphic>
+
+                  <ImageView fitHeight="180.0" fitWidth="129.0" pickOnBounds="true" preserveRatio="true">
+
+                     <image>
+
+                        <Image url="/images/wizards/wizardsDuze/e7.jpg" />
+
+                     </image>
+
+                  </ImageView>
+
+               </graphic>
+
+            </Button>
+
+            <Button layoutX="880.0" layoutY="10.0" mnemonicParsing="false" prefHeight="180.0" prefWidth="129.0">
+
+               <graphic>
+
+                  <ImageView fitHeight="180.0" fitWidth="129.0" pickOnBounds="true" preserveRatio="true">
+
+                     <image>
+
+                        <Image url="/images/wizards/wizardsDuze/e8.jpg" />
+
+                     </image>
+
+                  </ImageView>
+
+               </graphic>
+
+            </Button>
+
+         </children>
+
+         <padding>
+
+            <Insets left="50.0" />
+
+         </padding>
+
+      </TilePane>
+
+   </children>
+
+</Pane>
