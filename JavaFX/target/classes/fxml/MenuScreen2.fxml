@@ -34,7 +34,7 @@
 
       </TilePane>
 
-      <Button layoutX="304.0" layoutY="622.0" mnemonicParsing="false" onAction="#openApplication" text="START GAME">
+      <Button fx:id="buttonStartGame" layoutX="304.0" layoutY="622.0" mnemonicParsing="false" onAction="#openApplication" text="START GAME">
 
          <font>
 
@@ -114,7 +114,7 @@
 
          <children>
 
-            <Button fx:id="button1" mnemonicParsing="false" onAction="#setWizardOne" prefHeight="180.0" prefWidth="129.0">
+            <Button fx:id="buttonW1" mnemonicParsing="false" onAction="#setWizardOne" prefHeight="180.0" prefWidth="129.0">
 
                <graphic>
 
@@ -132,7 +132,7 @@
 
             </Button>
 
-            <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="180.0" prefWidth="129.0">
+            <Button fx:id="buttonW2" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="180.0" prefWidth="129.0">
 
                <graphic>
 
@@ -150,7 +150,7 @@
 
             </Button>
 
-            <Button layoutX="155.0" layoutY="10.0" mnemonicParsing="false" prefHeight="180.0" prefWidth="129.0">
+            <Button fx:id="buttonW3" layoutX="155.0" layoutY="10.0" mnemonicParsing="false" prefHeight="180.0" prefWidth="129.0">
 
                <graphic>
 
@@ -168,7 +168,7 @@
 
             </Button>
 
-            <Button layoutX="300.0" layoutY="10.0" mnemonicParsing="false" prefHeight="180.0" prefWidth="129.0">
+            <Button fx:id="buttonW4" layoutX="300.0" layoutY="10.0" mnemonicParsing="false" prefHeight="180.0" prefWidth="129.0">
 
                <graphic>
 
@@ -186,7 +186,7 @@
 
             </Button>
 
-            <Button layoutX="445.0" layoutY="10.0" mnemonicParsing="false" prefHeight="180.0" prefWidth="129.0">
+            <Button fx:id="buttonW5" layoutX="445.0" layoutY="10.0" mnemonicParsing="false" prefHeight="180.0" prefWidth="129.0">
 
                <graphic>
 
@@ -204,7 +204,7 @@
 
             </Button>
 
-            <Button layoutX="590.0" layoutY="10.0" mnemonicParsing="false" prefHeight="180.0" prefWidth="129.0">
+            <Button fx:id="buttonW6" layoutX="590.0" layoutY="10.0" mnemonicParsing="false" prefHeight="180.0" prefWidth="129.0">
 
                <graphic>
 
@@ -222,7 +222,7 @@
 
             </Button>
 
-            <Button layoutX="735.0" layoutY="10.0" mnemonicParsing="false" prefHeight="180.0" prefWidth="129.0">
+            <Button fx:id="buttonW7" layoutX="735.0" layoutY="10.0" mnemonicParsing="false" prefHeight="180.0" prefWidth="129.0">
 
                <graphic>
 
@@ -240,7 +240,7 @@
 
             </Button>
 
-            <Button layoutX="880.0" layoutY="10.0" mnemonicParsing="false" prefHeight="180.0" prefWidth="129.0">
+            <Button fx:id="buttonW8" layoutX="880.0" layoutY="10.0" mnemonicParsing="false" prefHeight="180.0" prefWidth="129.0">
 
                <graphic>
 
