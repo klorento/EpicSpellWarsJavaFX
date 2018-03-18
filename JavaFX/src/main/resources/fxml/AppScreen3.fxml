@@ -184,26 +184,12 @@
                   <Insets left="21.0" top="15.0" />
                </TilePane.margin>
             </TilePane>
-            <TilePane layoutX="264.0" layoutY="25.0" prefHeight="122.0" prefWidth="210.0">
-               <children>
-                  <ImageView fitHeight="122.0" fitWidth="210.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="/images/wizards/wizardsmale/4playermaly6.jpg" />
-                     </image>
-                  </ImageView>
-               </children>
+            <TilePane fx:id="imageWizardOpponentTwo" layoutX="264.0" layoutY="25.0" prefHeight="122.0" prefWidth="210.0">
                <TilePane.margin>
                   <Insets left="19.0" top="15.0" />
                </TilePane.margin>
             </TilePane>
-            <TilePane layoutX="495.0" layoutY="25.0" prefHeight="122.0" prefWidth="210.0">
-               <children>
-                  <ImageView fitHeight="122.0" fitWidth="210.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="/images/wizards/wizardsmale/4playermaly6.jpg" />
-                     </image>
-                  </ImageView>
-               </children>
+            <TilePane fx:id="imageWizardOpponentThree" layoutX="495.0" layoutY="25.0" prefHeight="122.0" prefWidth="210.0">
                <TilePane.margin>
                   <Insets left="17.0" top="15.0" />
                </TilePane.margin>

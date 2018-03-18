@@ -17,6 +17,10 @@ import java.util.Random;
 public class ControllerAppScreen3 {
     private ControllerMain controllerMain;
     @FXML
+    private TilePane imageWizardOpponentTwo;
+    @FXML
+    private TilePane imageWizardOpponentThree;
+    @FXML
     private TilePane imageWizardDwa;
     @FXML
     private TilePane imageWizardOpponentOne;
@@ -69,18 +73,33 @@ public class ControllerAppScreen3 {
         random.nextInt(8);
 
         for (String urlPicture : listSmallPicture) {
-            listSmallPicture.get(random.nextInt(8));
-            if(!urlPicture.equals(ApplicationState.getInstance().getWizardPictureMaly())){
-
+            if (!urlPicture.equals(ApplicationState.getInstance().getWizardPictureMaly())) {
                 ImageView imageWizardOpponentOne1 = new ImageView(new Image(getClass().getResourceAsStream(urlPicture)));
                 imageWizardOpponentOne.getChildren().add(imageWizardOpponentOne1);
+                ApplicationState.getInstance().setWizardPictureMaly(urlPicture);
+                listSmallPicture.remove(ApplicationState.getInstance().getWizardPictureMaly());
                 break;
             }
         }
-
-
-
-
+        for (String urlPicture : listSmallPicture) {
+            if (!urlPicture.equals(ApplicationState.getInstance().getWizardPictureMaly())) {
+                ImageView imageWizardOpponentTwo2 = new ImageView(new Image(getClass().getResourceAsStream(urlPicture)));
+                imageWizardOpponentTwo.getChildren().add(imageWizardOpponentTwo2);
+                ApplicationState.getInstance().setWizardPictureMaly(urlPicture);
+                listSmallPicture.remove(ApplicationState.getInstance().getWizardPictureMaly());
+                break;
+            }
+        }
+        for (String urlPicture : listSmallPicture) {
+            if (!urlPicture.equals(ApplicationState.getInstance().getWizardPictureMaly())) {
+                ImageView imageWizardOpponentThree3 = new ImageView(new Image(getClass().getResourceAsStream(urlPicture)));
+                imageWizardOpponentThree.getChildren().add(imageWizardOpponentThree3);
+                ApplicationState.getInstance().setWizardPictureMaly(urlPicture);
+                listSmallPicture.remove(ApplicationState.getInstance().getWizardPictureMaly());
+                break;
+            }
+        }
+    }
 //            ImageView imageWizardOpponentOne2 = null;
 //            for (int i = 0; i < listSmallPicture.size(); i++) {
 //                if (listSmallPicture.get(i).equals(ApplicationState.getInstance().getWizardPictureMaly())) {
@@ -95,9 +114,6 @@ public class ControllerAppScreen3 {
 
 //        imageWizardOpponentDwa.
 //        imageWizardOpponentTrzy.
-    }
-
-
 
     public void setControllerMain(ControllerMain controllerMain) {
         this.controllerMain = controllerMain;
