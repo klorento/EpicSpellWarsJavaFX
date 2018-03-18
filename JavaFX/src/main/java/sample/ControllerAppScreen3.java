@@ -1,9 +1,13 @@
 package sample;
 
+import card.Card;
+import card.CardsDecks;
 import gameMechanics.ApplicationState;
 import gameMechanics.ThrowADice;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.control.Toggle;
+import javafx.scene.control.ToggleButton;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
@@ -24,20 +28,42 @@ public class ControllerAppScreen3 {
     private TilePane imageWizardDwa;
     @FXML
     private TilePane imageWizardOpponentOne;
+    @FXML
+    private ToggleButton cardOne;
+    @FXML
+    private ToggleButton cardTwo;
+    @FXML
+    private ToggleButton cardThree;
+    @FXML
+    private ToggleButton cardFour;
+    @FXML
+    private ToggleButton cardFive;
+    @FXML
+    private ToggleButton cardSix;
+    @FXML
+    private ToggleButton cardSeven;
+    @FXML
+    private ToggleButton cardEight;
 
     @FXML
-    public void throwADice(){
-        new ThrowADice();
+    public void giveAwayTheCards() {
+//        CardsDecks cardsDecks = new CardsDecks();
+//        Image image = new Image(getClass().getResourceAsStream("icon.png"));
+//        ToggleButton tb = new ToggleButton ("Press me", new ImageView(image));
+        cardOne.setGraphic(new ImageView(new Image("/images/cards/delivery/dda1.jpg")));
+
     }
 
     @FXML
-    public void backMenu(){
-         controllerMain.loadStartScreen();
+    public void backMenu() {
+        controllerMain.loadStartScreen();
     }
+
     @FXML
     private TilePane imageWizardJeden;
+
     @FXML
-    public void endPage(){
+    public void endPage() {
         FXMLLoader loader = new FXMLLoader(this.getClass().getResource("/fxml/TheFinalPageApplication4.fxml"));
         Pane pane = null;
         try {
@@ -85,7 +111,6 @@ public class ControllerAppScreen3 {
             if (!urlPicture.equals(ApplicationState.getInstance().getWizardPictureMaly())) {
                 ImageView imageWizardOpponentTwo2 = new ImageView(new Image(getClass().getResourceAsStream(urlPicture)));
                 imageWizardOpponentTwo.getChildren().add(imageWizardOpponentTwo2);
-
                 listSmallPicture.remove(ApplicationState.getInstance().getWizardPictureMaly());
                 ApplicationState.getInstance().setWizardPictureMaly(urlPicture);
                 break;
@@ -95,7 +120,6 @@ public class ControllerAppScreen3 {
             if (!urlPicture.equals(ApplicationState.getInstance().getWizardPictureMaly())) {
                 ImageView imageWizardOpponentThree3 = new ImageView(new Image(getClass().getResourceAsStream(urlPicture)));
                 imageWizardOpponentThree.getChildren().add(imageWizardOpponentThree3);
-
                 listSmallPicture.remove(ApplicationState.getInstance().getWizardPictureMaly());
                 ApplicationState.getInstance().setWizardPictureMaly(urlPicture);
                 break;
@@ -107,11 +131,10 @@ public class ControllerAppScreen3 {
 //                if (listSmallPicture.get(i).equals(ApplicationState.getInstance().getWizardPictureMaly())) {
 //                    continue;
 //                } else {
-//                    String url = listSmallPicture.get(i);
+//                   String url = listSmallPicture.get(i);
 //                    imageWizardOpponentOne2 = new ImageView(new Image(url));
-//                    }
+//                   }
 //            }
-//        }
 
 
 //        imageWizardOpponentDwa.

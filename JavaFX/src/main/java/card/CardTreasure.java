@@ -6,5 +6,6 @@ public class CardTreasure extends Card{
 
     public CardTreasure(ImageView imageCard, String nameCard) {
         super(imageCard, nameCard);
+
     }
 }
