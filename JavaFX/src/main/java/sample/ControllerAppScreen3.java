@@ -76,8 +76,8 @@ public class ControllerAppScreen3 {
             if (!urlPicture.equals(ApplicationState.getInstance().getWizardPictureMaly())) {
                 ImageView imageWizardOpponentOne1 = new ImageView(new Image(getClass().getResourceAsStream(urlPicture)));
                 imageWizardOpponentOne.getChildren().add(imageWizardOpponentOne1);
-                ApplicationState.getInstance().setWizardPictureMaly(urlPicture);
                 listSmallPicture.remove(ApplicationState.getInstance().getWizardPictureMaly());
+                ApplicationState.getInstance().setWizardPictureMaly(urlPicture);
                 break;
             }
         }
@@ -85,8 +85,9 @@ public class ControllerAppScreen3 {
             if (!urlPicture.equals(ApplicationState.getInstance().getWizardPictureMaly())) {
                 ImageView imageWizardOpponentTwo2 = new ImageView(new Image(getClass().getResourceAsStream(urlPicture)));
                 imageWizardOpponentTwo.getChildren().add(imageWizardOpponentTwo2);
-                ApplicationState.getInstance().setWizardPictureMaly(urlPicture);
+
                 listSmallPicture.remove(ApplicationState.getInstance().getWizardPictureMaly());
+                ApplicationState.getInstance().setWizardPictureMaly(urlPicture);
                 break;
             }
         }
@@ -94,8 +95,9 @@ public class ControllerAppScreen3 {
             if (!urlPicture.equals(ApplicationState.getInstance().getWizardPictureMaly())) {
                 ImageView imageWizardOpponentThree3 = new ImageView(new Image(getClass().getResourceAsStream(urlPicture)));
                 imageWizardOpponentThree.getChildren().add(imageWizardOpponentThree3);
-                ApplicationState.getInstance().setWizardPictureMaly(urlPicture);
+
                 listSmallPicture.remove(ApplicationState.getInstance().getWizardPictureMaly());
+                ApplicationState.getInstance().setWizardPictureMaly(urlPicture);
                 break;
             }
         }
