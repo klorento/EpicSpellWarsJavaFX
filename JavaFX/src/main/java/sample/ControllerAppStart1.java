@@ -50,6 +50,7 @@ public class ControllerAppStart1 {
 
         ControllerMenuScreen2 controllerMenuScreen2 = loader.getController();
         controllerMenuScreen2.initListener();
+
         controllerMenuScreen2.setControllerMain(controllerMain);
         controllerMain.setScreen(pane);
 

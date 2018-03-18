@@ -7,6 +7,14 @@ import card.CardTreasure;
 import java.util.List;
 
 public class Player {
+     private static Player instance;
+     static{
+         instance = new Player();
+     }
+     public static Player getInstance(){
+         return instance;
+     }
+
     private int hp;
     private int id;
     private int initiative;

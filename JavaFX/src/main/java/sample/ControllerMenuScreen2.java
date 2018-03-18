@@ -9,6 +9,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.control.ToggleButton;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
@@ -45,6 +46,8 @@ public class ControllerMenuScreen2 {
     @FXML
     private Button confirmNickname;
     private ControllerAppScreen3 controllerAppScreen3;
+    @FXML
+    private ToggleButton cardOne;
 
     @FXML
     private TextField nick;
@@ -56,28 +59,34 @@ public class ControllerMenuScreen2 {
     private Label welcomePlayer;
     @FXML
     private Button buttonStartGame;
-
+    @FXML
+    private Pane paneApp3;
     @FXML
     private Button buttonSetWizardJeden;
 
     private UserPlayer userPlayer = new UserPlayer();
     @FXML
     public void openApplication(){
+
         FXMLLoader loader = new FXMLLoader(this.getClass().getResource("/fxml/AppScreen3.fxml"));
         Pane pane = null;
         try {
+
             pane = loader.load();
         } catch (IOException e) {
             e.printStackTrace();
         }
+
         ControllerAppScreen3 controllerAppScreen3 = loader.getController();
+//        controllerAppScreen3.initListenerTwo();
 //        buttonStartGame.setOnAction(new EventHandler<ActionEvent>() {
 //            public void handle(ActionEvent event) {
 //                controllerAppScreen3.setImage(ApplicationState.getInstance().getWizardPicture(),ApplicationState.getInstance().getWizardPictureMaly());
 //            }
 //        });
-        controllerAppScreen3.setImage();
 
+
+        controllerAppScreen3.setImage();
 
         controllerAppScreen3.setControllerMain(controllerMain);
         controllerMain.setScreen(pane);
@@ -162,4 +171,6 @@ public class ControllerMenuScreen2 {
     public void setControllerMain(ControllerMain controllerMain) {
         this.controllerMain = controllerMain;
     }
+
+
 }

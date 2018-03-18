@@ -4,12 +4,15 @@ import card.Card;
 import card.CardsDecks;
 import gameMechanics.ApplicationState;
 import gameMechanics.ThrowADice;
+import javafx.event.Event;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Toggle;
 import javafx.scene.control.ToggleButton;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.TilePane;
 
@@ -28,6 +31,9 @@ public class ControllerAppScreen3 {
     private TilePane imageWizardDwa;
     @FXML
     private TilePane imageWizardOpponentOne;
+
+//    @FXML
+//    private AnchorPane imageCardOne;
     @FXML
     private ToggleButton cardOne;
     @FXML
@@ -47,11 +53,27 @@ public class ControllerAppScreen3 {
 
     @FXML
     public void giveAwayTheCards() {
+
 //        CardsDecks cardsDecks = new CardsDecks();
 //        Image image = new Image(getClass().getResourceAsStream("icon.png"));
 //        ToggleButton tb = new ToggleButton ("Press me", new ImageView(image));
+//        (new ImageView(new Image("/images/cards/delivery/dda1.jpg")));
+//        Random random = new Random();
+//        for (int i = 0; i<8 ; i++) {
+//            random.nextInt(145);
+//            int chooseCard = random.nextInt(145);
+//            cardsDeck.get(random.nextInt(145));
+//            listHandCard.add(i,cardsDeck.get(i));
+//            cardsDeck.remove(chooseCard);
+//        }
         cardOne.setGraphic(new ImageView(new Image("/images/cards/delivery/dda1.jpg")));
-
+        cardTwo.setGraphic(new ImageView(new Image("/images/cards/delivery/dda1.jpg")));
+        cardThree.setGraphic(new ImageView(new Image("/images/cards/delivery/dda1.jpg")));
+        cardFour.setGraphic(new ImageView(new Image("/images/cards/delivery/dda1.jpg")));
+        cardFive.setGraphic(new ImageView(new Image("/images/cards/delivery/dda1.jpg")));
+        cardSix.setGraphic(new ImageView(new Image("/images/cards/delivery/dda1.jpg")));
+        cardSeven.setGraphic(new ImageView(new Image("/images/cards/delivery/dda1.jpg")));
+        cardEight.setGraphic(new ImageView(new Image("/images/cards/delivery/dda1.jpg")));
     }
 
     @FXML
@@ -139,6 +161,14 @@ public class ControllerAppScreen3 {
 
 //        imageWizardOpponentDwa.
 //        imageWizardOpponentTrzy.
+//    public void initListenerTwo(){
+//        EventHandler eventHandler = new EventHandler() {
+//            public void handle(Event event) {
+//
+//            }
+//        };
+//    }
+
 
     public void setControllerMain(ControllerMain controllerMain) {
         this.controllerMain = controllerMain;

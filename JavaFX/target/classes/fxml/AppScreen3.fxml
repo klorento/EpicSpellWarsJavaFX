@@ -32,7 +32,7 @@
                   <Insets left="22.0" top="8.0" />
                </TilePane.margin>
                <children>
-                  <ToggleButton fx:id="cardOne" mnemonicParsing="false" prefHeight="296.0" prefWidth="209.0" />
+                  <ToggleButton fx:id="cardOne" maxHeight="296.0" maxWidth="209.0" minHeight="296.0" minWidth="209.0" mnemonicParsing="false" prefHeight="296.0" prefWidth="209.0" styleClass="cardOne" stylesheets="@../application.css" />
                </children>
             </TilePane>
             <TilePane layoutX="32.0" layoutY="18.0" prefColumns="4" prefHeight="296.0" prefRows="2" prefWidth="209.0">
@@ -43,7 +43,7 @@
                   <Insets left="22.0" top="8.0" />
                </TilePane.margin>
                <children>
-                  <ToggleButton fx:id="cardTwo" mnemonicParsing="false" prefHeight="296.0" prefWidth="209.0" />
+                  <ToggleButton fx:id="cardTwo" maxHeight="296.0" maxWidth="209.0" minHeight="296.0" minWidth="209.0" mnemonicParsing="false" prefHeight="296.0" prefWidth="209.0" />
                </children>
             </TilePane>
             <TilePane layoutX="263.0" layoutY="18.0" prefColumns="4" prefHeight="296.0" prefRows="2" prefWidth="209.0">
@@ -54,7 +54,7 @@
                   <Insets left="22.0" top="8.0" />
                </TilePane.margin>
                <children>
-                  <ToggleButton fx:id="cardThree" mnemonicParsing="false" prefHeight="296.0" prefWidth="209.0" />
+                  <ToggleButton fx:id="cardThree" maxHeight="296.0" maxWidth="209.0" minHeight="296.0" minWidth="209.0" mnemonicParsing="false" prefHeight="296.0" prefWidth="209.0" />
                </children>
             </TilePane>
             <TilePane layoutX="494.0" layoutY="18.0" prefColumns="4" prefHeight="296.0" prefRows="2" prefWidth="209.0">
@@ -65,7 +65,7 @@
                   <Insets left="22.0" top="8.0" />
                </TilePane.margin>
                <children>
-                  <ToggleButton fx:id="cardFour" mnemonicParsing="false" prefHeight="296.0" prefWidth="209.0" />
+                  <ToggleButton fx:id="cardFour" maxHeight="296.0" maxWidth="209.0" minHeight="296.0" minWidth="209.0" mnemonicParsing="false" prefHeight="296.0" prefWidth="209.0" />
                </children>
             </TilePane>
             <TilePane layoutX="725.0" layoutY="18.0" prefColumns="4" prefHeight="296.0" prefRows="2" prefWidth="209.0">
@@ -76,7 +76,7 @@
                   <Insets left="22.0" top="14.0" />
                </TilePane.margin>
                <children>
-                  <ToggleButton fx:id="cardFive" mnemonicParsing="false" prefHeight="296.0" prefWidth="209.0" />
+                  <ToggleButton fx:id="cardFive" maxHeight="296.0" maxWidth="209.0" minHeight="296.0" minWidth="209.0" mnemonicParsing="false" prefHeight="296.0" prefWidth="209.0" />
                </children>
             </TilePane>
             <TilePane layoutX="32.0" layoutY="334.0" prefColumns="4" prefHeight="296.0" prefRows="2" prefWidth="209.0">
@@ -87,7 +87,7 @@
                   <Insets left="22.0" top="14.0" />
                </TilePane.margin>
                <children>
-                  <ToggleButton fx:id="cardSix" mnemonicParsing="false" prefHeight="296.0" prefWidth="209.0" />
+                  <ToggleButton fx:id="cardSix" maxHeight="296.0" maxWidth="209.0" minHeight="296.0" minWidth="209.0" mnemonicParsing="false" prefHeight="296.0" prefWidth="209.0" />
                </children>
             </TilePane>
             <TilePane layoutX="263.0" layoutY="334.0" prefColumns="4" prefHeight="296.0" prefRows="2" prefWidth="209.0">
@@ -98,7 +98,7 @@
                   <Insets left="22.0" top="14.0" />
                </TilePane.margin>
                <children>
-                  <ToggleButton fx:id="cardSeven" mnemonicParsing="false" prefHeight="296.0" prefWidth="209.0" />
+                  <ToggleButton fx:id="cardSeven" maxHeight="296.0" maxWidth="209.0" minHeight="296.0" minWidth="209.0" mnemonicParsing="false" prefHeight="296.0" prefWidth="209.0" />
                </children>
             </TilePane>
             <TilePane layoutX="494.0" layoutY="334.0" prefColumns="4" prefHeight="296.0" prefRows="2" prefWidth="209.0">
@@ -109,7 +109,7 @@
                   <Insets left="22.0" top="14.0" />
                </TilePane.margin>
                <children>
-                  <ToggleButton fx:id="cardEight" mnemonicParsing="false" prefHeight="296.0" prefWidth="209.0" />
+                  <ToggleButton fx:id="cardEight" maxHeight="296.0" maxWidth="209.0" minHeight="296.0" minWidth="209.0" mnemonicParsing="false" prefHeight="296.0" prefWidth="209.0" />
                </children>
             </TilePane>
          </children>
