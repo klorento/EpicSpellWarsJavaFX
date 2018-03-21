@@ -3,36 +3,31 @@ package sample;
 import card.Card;
 import card.CardsDecks;
 import gameMechanics.ApplicationState;
-import gameMechanics.ThrowADice;
-import javafx.event.Event;
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.control.Toggle;
 import javafx.scene.control.ToggleButton;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.TilePane;
+import players.AIPlayer;
+import players.UserPlayer;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
 
 public class ControllerAppScreen3 {
     private ControllerMain controllerMain;
     @FXML
-    private TilePane imageWizardOpponentTwo;
+    private ToggleButton imageWizardOpponentTwo;
     @FXML
-    private TilePane imageWizardOpponentThree;
+    private ToggleButton imageWizardOpponentThree;
     @FXML
     private TilePane imageWizardDwa;
     @FXML
-    private TilePane imageWizardOpponentOne;
+    private ToggleButton imageWizardOpponentOne;
 
-//    @FXML
+    //    @FXML
 //    private AnchorPane imageCardOne;
     @FXML
     private ToggleButton cardOne;
@@ -66,14 +61,99 @@ public class ControllerAppScreen3 {
 //            listHandCard.add(i,cardsDeck.get(i));
 //            cardsDeck.remove(chooseCard);
 //        }
-        cardOne.setGraphic(new ImageView(new Image("/images/cards/delivery/dda1.jpg")));
-        cardTwo.setGraphic(new ImageView(new Image("/images/cards/delivery/dda1.jpg")));
-        cardThree.setGraphic(new ImageView(new Image("/images/cards/delivery/dda1.jpg")));
-        cardFour.setGraphic(new ImageView(new Image("/images/cards/delivery/dda1.jpg")));
-        cardFive.setGraphic(new ImageView(new Image("/images/cards/delivery/dda1.jpg")));
-        cardSix.setGraphic(new ImageView(new Image("/images/cards/delivery/dda1.jpg")));
-        cardSeven.setGraphic(new ImageView(new Image("/images/cards/delivery/dda1.jpg")));
-        cardEight.setGraphic(new ImageView(new Image("/images/cards/delivery/dda1.jpg")));
+//        rozdanie kart, czyli stworzenie playerów i przydzielenie do ich list kart
+//         ilość playerów zależna od wyboru użytkownika
+//         przydzielenie
+        CardsDecks cardsList = new CardsDecks();
+        UserPlayer userPlayer = new UserPlayer();
+        AIPlayer aiPlayer1 = new AIPlayer();
+        AIPlayer aiPlayer2 = new AIPlayer();
+        AIPlayer aiPlayer3 = new AIPlayer();
+        //     if ile graczy wybrał użytkownik
+        userPlayer.setHp(20);
+        aiPlayer1.setHp(20);
+        aiPlayer2.setHp(20);
+        aiPlayer3.setHp(20);
+        Random random = new Random();
+        int zmiennaLosowa = 8;
+        List<Card> listCardHand = new ArrayList<Card>(8);
+        int i = 0;
+        List<Integer> numbers = new ArrayList<Integer>();
+        for(int m = 0; m < 16; m++) {
+            numbers.add(m);
+        }
+        Collections.shuffle(numbers);
+        for (int k = 0; k<8 ;k++){
+            listCardHand.add(k,cardsList.getCardDeck().get(numbers.get(k)));
+        }
+
+            switch (i){
+                case 0:
+                cardOne.setGraphic(listCardHand.get(i).getImageCard());
+                i++;
+                case 1:
+                cardTwo.setGraphic(listCardHand.get(i).getImageCard());
+                i++;
+                case 2:
+                cardThree.setGraphic(listCardHand.get(i).getImageCard());
+                i++;
+                case 3:
+                cardFour.setGraphic(listCardHand.get(i).getImageCard());
+                i++;
+                case 4:
+                cardFive.setGraphic(listCardHand.get(i).getImageCard());
+                i++;
+                case 5:
+                cardSix.setGraphic(listCardHand.get(i).getImageCard());
+                i++;
+                case 6:
+                cardSeven.setGraphic(listCardHand.get(i).getImageCard());
+                i++;
+                case 7:
+                cardEight.setGraphic(listCardHand.get(i).getImageCard());
+            }
+            // cardsDecks.getCardsDeck().remove(aRandomCardFromTheDeck);
+
+        userPlayer.setListHandCard(listCardHand);
+
+        listCardHand.clear();
+
+        for (int j = 0; j < 8; j++) {
+            int aRandomCardFromTheDeck = random.nextInt(zmiennaLosowa);
+            //    logika dotycząca karty Skarbu chyba
+            listCardHand.add(cardsList.getCardDeck().get(aRandomCardFromTheDeck));
+            cardsList.getCardDeck().remove(aRandomCardFromTheDeck);
+        }
+        aiPlayer1.setListHandCard(listCardHand);
+
+        listCardHand.clear();
+        for (int j = 0; j < 8; j++) {
+            int aRandomCardFromTheDeck = random.nextInt(zmiennaLosowa);
+            //    logika dotycząca karty Skarbu chyba
+            listCardHand.add(cardsList.getCardDeck().get(aRandomCardFromTheDeck));
+            cardsList.getCardDeck().remove(aRandomCardFromTheDeck);
+        }
+        aiPlayer2.setListHandCard(listCardHand);
+
+        listCardHand.clear();
+        for (int j = 0; j < 8; j++) {
+            int aRandomCardFromTheDeck = random.nextInt(zmiennaLosowa);
+            //    logika dotycząca karty Skarbu chyba
+            listCardHand.add(cardsList.getCardDeck().get(aRandomCardFromTheDeck));
+            cardsList.getCardDeck().remove(aRandomCardFromTheDeck);
+        }
+        aiPlayer3.setListHandCard(listCardHand);
+
+
+//
+//        cardOne.setGraphic(new ImageView(new Image("/images/cards/delivery/dda1.jpg")));
+//        cardTwo.setGraphic(new ImageView(new Image("/images/cards/delivery/dda1.jpg")));
+//        cardThree.setGraphic(new ImageView(new Image("/images/cards/delivery/dda1.jpg")));
+//        cardFour.setGraphic(new ImageView(new Image("/images/cards/delivery/dda1.jpg")));
+//        cardFive.setGraphic(new ImageView(new Image("/images/cards/delivery/dda1.jpg")));
+//        cardSix.setGraphic(new ImageView(new Image("/images/cards/delivery/dda1.jpg")));
+//        cardSeven.setGraphic(new ImageView(new Image("/images/cards/delivery/dda1.jpg")));
+//        cardEight.setGraphic(new ImageView(new Image("/images/cards/delivery/dda1.jpg")));
     }
 
     @FXML
@@ -85,8 +165,8 @@ public class ControllerAppScreen3 {
     private TilePane imageWizardJeden;
 
     @FXML
-    public void endPage() {
-        FXMLLoader loader = new FXMLLoader(this.getClass().getResource("/fxml/TheFinalPageApplication4.fxml"));
+    public void theSpellPage() {
+        FXMLLoader loader = new FXMLLoader(this.getClass().getResource("/fxml/TheSpellPage4.fxml"));
         Pane pane = null;
         try {
             pane = loader.load();
@@ -94,15 +174,16 @@ public class ControllerAppScreen3 {
             e.printStackTrace();
         }
 
-        ControllerTheFinalPageApplication4 controllerTheFinalPageApplication4 = loader.getController();
+        ControllerTheSpellPage4 controllerTheSpellPage4 = loader.getController();
 
-        controllerTheFinalPageApplication4.setControllerMain(controllerMain);
+        controllerTheSpellPage4.setControllerMain(controllerMain);
         controllerMain.setScreen(pane);
     }
 
 
     @FXML
     public void setImage() {
+
         ImageView imageWizardOne = new ImageView(new Image(getClass().getResourceAsStream(ApplicationState.getInstance().getWizardPictureMaly())));
         ImageView imageWizardTwo = new ImageView(new Image(getClass().getResourceAsStream(ApplicationState.getInstance().getWizardPicture())));
         imageWizardDwa.getChildren().add(imageWizardTwo);
@@ -123,7 +204,7 @@ public class ControllerAppScreen3 {
         for (String urlPicture : listSmallPicture) {
             if (!urlPicture.equals(ApplicationState.getInstance().getWizardPictureMaly())) {
                 ImageView imageWizardOpponentOne1 = new ImageView(new Image(getClass().getResourceAsStream(urlPicture)));
-                imageWizardOpponentOne.getChildren().add(imageWizardOpponentOne1);
+                imageWizardOpponentOne.setGraphic(imageWizardOpponentOne1);
                 listSmallPicture.remove(ApplicationState.getInstance().getWizardPictureMaly());
                 ApplicationState.getInstance().setWizardPictureMaly(urlPicture);
                 break;
@@ -132,7 +213,7 @@ public class ControllerAppScreen3 {
         for (String urlPicture : listSmallPicture) {
             if (!urlPicture.equals(ApplicationState.getInstance().getWizardPictureMaly())) {
                 ImageView imageWizardOpponentTwo2 = new ImageView(new Image(getClass().getResourceAsStream(urlPicture)));
-                imageWizardOpponentTwo.getChildren().add(imageWizardOpponentTwo2);
+                imageWizardOpponentTwo.setGraphic(imageWizardOpponentTwo2);
                 listSmallPicture.remove(ApplicationState.getInstance().getWizardPictureMaly());
                 ApplicationState.getInstance().setWizardPictureMaly(urlPicture);
                 break;
@@ -141,7 +222,7 @@ public class ControllerAppScreen3 {
         for (String urlPicture : listSmallPicture) {
             if (!urlPicture.equals(ApplicationState.getInstance().getWizardPictureMaly())) {
                 ImageView imageWizardOpponentThree3 = new ImageView(new Image(getClass().getResourceAsStream(urlPicture)));
-                imageWizardOpponentThree.getChildren().add(imageWizardOpponentThree3);
+                imageWizardOpponentThree.setGraphic(imageWizardOpponentThree3);
                 listSmallPicture.remove(ApplicationState.getInstance().getWizardPictureMaly());
                 ApplicationState.getInstance().setWizardPictureMaly(urlPicture);
                 break;

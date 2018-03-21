@@ -116,7 +116,7 @@
       </TilePane>
       <Button layoutX="1000.0" layoutY="600.0" mnemonicParsing="false" onAction="#giveAwayTheCards" text="Rozdaj Karty" />
       <Button layoutX="1000.0" layoutY="700.0" mnemonicParsing="false" onAction="#backMenu" text="Back to menu" />
-      <Button layoutX="999.0" layoutY="650.0" mnemonicParsing="false" onAction="#endPage" prefHeight="31.0" prefWidth="109.0" text="EndPage" />
+      <Button layoutX="999.0" layoutY="650.0" mnemonicParsing="false" onAction="#theSpellPage" prefHeight="31.0" prefWidth="109.0" text="EndPage" />
       <TilePane prefColumns="4" prefHeight="146.0" prefRows="1" prefWidth="947.0">
          <children>
             <TilePane fx:id="imageWizardJeden" prefHeight="122.0" prefWidth="210.0">
@@ -124,20 +124,29 @@
                   <Insets left="23.0" top="15.0" />
                </TilePane.margin>
             </TilePane>
-            <TilePane fx:id="imageWizardOpponentOne" layoutX="33.0" layoutY="25.0" prefHeight="122.0" prefWidth="210.0">
+            <TilePane layoutX="33.0" layoutY="25.0" prefHeight="122.0" prefWidth="210.0">
                <TilePane.margin>
                   <Insets left="21.0" top="15.0" />
                </TilePane.margin>
+               <children>
+                  <ToggleButton fx:id="imageWizardOpponentOne" maxHeight="122.0" maxWidth="210.0" minHeight="122.0" minWidth="210.0" mnemonicParsing="false" prefHeight="122.0" prefWidth="210.0" />
+               </children>
             </TilePane>
-            <TilePane fx:id="imageWizardOpponentTwo" layoutX="264.0" layoutY="25.0" prefHeight="122.0" prefWidth="210.0">
+            <TilePane layoutX="264.0" layoutY="25.0" prefHeight="122.0" prefWidth="210.0">
                <TilePane.margin>
                   <Insets left="19.0" top="15.0" />
                </TilePane.margin>
+               <children>
+                  <ToggleButton fx:id="imageWizardOpponentTwo" maxHeight="122.0" maxWidth="210.0" minHeight="122.0" minWidth="210.0" mnemonicParsing="false" prefHeight="122.0" prefWidth="210.0" />
+               </children>
             </TilePane>
-            <TilePane fx:id="imageWizardOpponentThree" layoutX="495.0" layoutY="25.0" prefHeight="122.0" prefWidth="210.0">
+            <TilePane layoutX="495.0" layoutY="25.0" prefHeight="122.0" prefWidth="210.0">
                <TilePane.margin>
                   <Insets left="17.0" top="15.0" />
                </TilePane.margin>
+               <children>
+                  <ToggleButton fx:id="imageWizardOpponentThree" maxHeight="122.0" maxWidth="210.0" minHeight="122.0" minWidth="210.0" mnemonicParsing="false" prefHeight="122.0" prefWidth="210.0" />
+               </children>
             </TilePane>
          </children>
       </TilePane>

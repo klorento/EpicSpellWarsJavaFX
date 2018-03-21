@@ -87,7 +87,6 @@ public class ControllerMenuScreen2 {
 
 
         controllerAppScreen3.setImage();
-
         controllerAppScreen3.setControllerMain(controllerMain);
         controllerMain.setScreen(pane);
 

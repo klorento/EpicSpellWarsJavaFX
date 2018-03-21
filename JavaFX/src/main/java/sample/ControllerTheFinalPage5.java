@@ -3,7 +3,7 @@ package sample;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
 
-public class ControllerTheFinalPageApplication4 {
+public class ControllerTheFinalPage5 {
     private ControllerMain controllerMain;
     @FXML
     public void openApplication(){

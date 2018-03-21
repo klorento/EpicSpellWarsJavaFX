@@ -9,6 +9,14 @@ import java.util.List;
 
 public class UserPlayer extends Player {
 
+    private static UserPlayer instance;
+    static{
+        instance = new UserPlayer();
+    }
+    public static UserPlayer getInstance(){
+        return instance;
+    }
+
     private StringProperty propertyTextField = new SimpleStringProperty(this,"nameProperty");
 
     public String getPropertyTextField() {
